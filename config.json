@@ -1,0 +1,15 @@
+{
+  "name": "springboard-retail",
+  "targetRepo": "/Users/zack/workspaces/retail/zed.worktrees/springboard-retail/coffee/springboard-retail",
+  "appDir": "apps/monolith",
+  "baseRef": "origin/staging",
+  "dataDir": "data/springboard-retail",
+  "workDir": ".work",
+  "container": {
+    "composeFiles": ["docker-compose.dev.yml", "docker-compose.dev-sr.yml"],
+    "service": "sr_web",
+    "projectName": "sr-coffee",
+    "repoMount": "/sr",
+    "toolsMount": "coffee-tools"
+  }
+}

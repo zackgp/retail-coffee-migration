@@ -1,0 +1,48 @@
+{
+ "karma-static": {
+  "files": 760,
+  "specs": 743,
+  "its": 3750
+ },
+ "tsc": {
+  "exit": 2,
+  "distinct": 12,
+  "errors": 12
+ },
+ "eslint": {
+  "exit": 0,
+  "errors": 0,
+  "warnings": 2158
+ },
+ "jest": {
+  "exit": 0,
+  "suites": 723,
+  "tests": 3936,
+  "failedTests": 0,
+  "failedSuites": 0
+ },
+ "webpack-dev": {
+  "exit": 0,
+  "modules": 5498,
+  "lines": 10128,
+  "errors": 0,
+  "warnings": 19,
+  "circular": 0
+ },
+ "webpack-prod": {
+  "exit": 0,
+  "modules": 5461,
+  "lines": 10056,
+  "errors": 0,
+  "warnings": 21,
+  "circular": 0
+ },
+ "karma": {
+  "exit": 0,
+  "total": 3740,
+  "passed": 3645,
+  "failed": 0,
+  "skipped": 95,
+  "suiteErrors": 0
+ }
+}

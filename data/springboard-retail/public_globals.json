@@ -1,0 +1,77 @@
+{
+  "$comment": "G5 永不删除白名单：自定义 App（第三方脚本，经 sagamore.customJavascriptUrls() 由 src/apps.coffee:loadCustomApps 用 $.getScript 加载）依赖的公开全局。来源：api/doc/custom_apps.md（公开文档）、PLAN.md（点名保留）、derived（公开 API 在实现上依赖、删除即会让公开 API 失效的全局）。迁移中这些名字必须保持注册在 window 上且行为不变（含 .extend 语义）；registeredIn 为 null 表示当前 staging 上已经缺失（回归），需要修复而不是删除。registeredIn 行号基于 origin/staging @ 6103b96a7f，路径相对 apps/monolith。",
+  "globals": [
+    {
+      "path": "Sagamore",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/sagamore_init_shim.js:1",
+      "note": "命名空间根对象。shim 中 `global.Sagamore = {}`；webpack 下 src/sagamore.coffee:32 `@Sagamore = Sagamore`（imports-loader?wrapper=window，webpack.config.js:121）再次挂到 window。B30 转换 sagamore.coffee 时必须改成显式 `window.Sagamore = ...`。"
+    },
+    {
+      "path": "Sagamore.API.V1",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/sagamore/api/v1.coffee:13",
+      "note": "文档示例 `var sr = Sagamore.API.V1`。v1.coffee 无任何 importer，只靠 src/main.coffee:29 的 require.context('sr', true, ...) 副作用加载；转换后不能因为“无 importer”被当作死代码删除，也不能改成只 export 不注册。Sagamore.API 命名空间由 src/sagamore_init_shim.js:2 创建。"
+    },
+    {
+      "path": "Sagamore.API.V1.installApp",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/sagamore/api/v1.coffee:5",
+      "note": "options: module/prefix/appClass。委托给 sagamore.installApp（src/apps.coffee:130），后者读取 appClass.prototype.routes 并 new opts.appClass({ module, prefix })（createApp，src/apps.coffee:91-98）。"
+    },
+    {
+      "path": "Sagamore.API.V1.addMenuEntry",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/sagamore/api/v1.coffee:8",
+      "note": "options: module/title/url。push 到 sagamore.customApps.menuEntries 并 trigger('change:custom-menu')；菜单在 src/sagamore/components/layouts/default/menu.coffee:151,156 消费。"
+    },
+    {
+      "path": "Sagamore.App",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/sagamore/app.coffee:77",
+      "note": "文档要求 `Sagamore.App.extend({ routes, <handler> })`，handler 内调用 `this.run({ view })`。extend 是 `@extend = Backbone.Router.extend`（app.coffee:15），run 在 app.coffee:23。PLAN.md B28 同样点名保留。src/sagamore_init_shim.js:8 先放了占位 `Sagamore.App = {}`。"
+    },
+    {
+      "path": "Sagamore.View",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": null,
+      "note": "【回归】文档示例 `Sagamore.View.extend({ render })`，但当前 src 中没有任何地方注册 Sagamore.View：`Sagamore.View = View` 在 7f1e17949d（HRTL-10407，2024-04-16，view.coffee→view.js）中被删除，shim 中的 `Sagamore.View = {}` 在 3bdb74eed1（HRTL-10406，2024-04-30）中被删除。应在 src/sagamore/view.js（Backbone.View.extend，view.js:20，export default 在 :169）恢复 `Sagamore.View = View`。PLAN.md B28 也点名保留。"
+    },
+    {
+      "path": "Sagamore.Formats",
+      "source": "PLAN.md",
+      "registeredIn": "src/sagamore.coffee:14",
+      "note": "`.jst.eco` 模板中约 100 处 `Sagamore.Formats.*` 依赖（PLAN.md §3 / B02 / B30）。值来自 sr/lib/formats；shim 占位在 src/sagamore_init_shim.js:145。"
+    },
+    {
+      "path": "$",
+      "source": "api/doc/custom_apps.md",
+      "registeredIn": "src/vendor/jquery.js:9833",
+      "note": "文档：“jQuery is available on the page as $”。vendor jQuery 1.8.3，由 src/vendor.coffee:1 require、webpack script-loader（webpack.config.js:112）以全局脚本方式执行，`window.jQuery = window.$ = jQuery`。同一行也注册了 window.jQuery。"
+    },
+    {
+      "path": "jQuery",
+      "source": "derived",
+      "registeredIn": "src/vendor/jquery.js:9833",
+      "note": "与 $ 同一处注册；jQuery 插件（vendor/jquery-ui 等）和自定义脚本依赖。"
+    },
+    {
+      "path": "sagamore",
+      "source": "derived",
+      "registeredIn": "src/main.coffee:35",
+      "note": "`@sagamore = new Environment()`（main.coffee 走 imports-loader?wrapper=window，所以 @ 即 window）。文档未直接提及，但 Sagamore.API.V1 的实现依赖它（v1.coffee:6,9-10）。main.coffee:38 还有向后兼容别名 `@sagamoreConfig = @sagamore`。"
+    },
+    {
+      "path": "sagamore.installApp",
+      "source": "derived",
+      "registeredIn": "src/apps.coffee:130",
+      "note": "Sagamore.API.V1.installApp 的实现。"
+    },
+    {
+      "path": "sagamore.customApps.menuEntries",
+      "source": "derived",
+      "registeredIn": "src/apps.coffee:83",
+      "note": "Sagamore.API.V1.addMenuEntry 的存储；同文件 :75-80 的 sagamore.startup.customApps.load 是自定义脚本加载完成的 Deferred。"
+    }
+  ]
+}

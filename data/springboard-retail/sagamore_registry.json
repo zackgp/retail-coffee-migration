@@ -1,0 +1,1968 @@
+{
+ "paths": {
+  "Sagamore.API": "object",
+  "Sagamore.API.PaymentDevices": "object",
+  "Sagamore.API.PaymentDevices.create": "function",
+  "Sagamore.API.V1": "object",
+  "Sagamore.API.V1.addMenuEntry": "function",
+  "Sagamore.API.V1.installApp": "function",
+  "Sagamore.Actions": "object",
+  "Sagamore.Actions.POSActions": "object",
+  "Sagamore.Actions.Payments": "object",
+  "Sagamore.Actions.Payments.NewPaymentForm": "object",
+  "Sagamore.Actions.TicketActions": "object",
+  "Sagamore.App": "function",
+  "Sagamore.Apps": "object",
+  "Sagamore.Apps.Applications": "function",
+  "Sagamore.Apps.CashDrawers": "function",
+  "Sagamore.Apps.CashPaid": "object",
+  "Sagamore.Apps.Collection": "function",
+  "Sagamore.Apps.CreditCards": "function",
+  "Sagamore.Apps.Default": "function",
+  "Sagamore.Apps.Ecommerces": "function",
+  "Sagamore.Apps.Financial": "function",
+  "Sagamore.Apps.GiftCard": "object",
+  "Sagamore.Apps.GiftCard.Adjustments": "function",
+  "Sagamore.Apps.GiftCards": "function",
+  "Sagamore.Apps.GridTemplates": "function",
+  "Sagamore.Apps.Integrations": "function",
+  "Sagamore.Apps.Integrations.Clover": "function",
+  "Sagamore.Apps.Integrations.Mailchimp": "function",
+  "Sagamore.Apps.Integrations.ManagementOne": "function",
+  "Sagamore.Apps.Integrations.Nuorder": "function",
+  "Sagamore.Apps.Integrations.Quickbooks": "function",
+  "Sagamore.Apps.Integrations.Quickbooks.MainView": "function",
+  "Sagamore.Apps.Integrations.Quickbooks.StatusView": "function",
+  "Sagamore.Apps.Integrations.Quickbooks.TableRowView": "function",
+  "Sagamore.Apps.Inventory": "object",
+  "Sagamore.Apps.Inventory.AdjustmentSets": "function",
+  "Sagamore.Apps.Inventory.PhysicalCounts": "function",
+  "Sagamore.Apps.Inventory.Transfers": "function",
+  "Sagamore.Apps.ItemGrids": "function",
+  "Sagamore.Apps.MyAccount": "function",
+  "Sagamore.Apps.PaymentTypes": "function",
+  "Sagamore.Apps.Pos": "function",
+  "Sagamore.Apps.Pos.DrawerCounts": "function",
+  "Sagamore.Apps.Pos.HeaderView": "function",
+  "Sagamore.Apps.Purchasing": "object",
+  "Sagamore.Apps.Purchasing.Receipts": "function",
+  "Sagamore.Apps.Purchasing.Receipts.HeaderView": "function",
+  "Sagamore.Apps.Purchasing.Returns": "function",
+  "Sagamore.Apps.Purchasing.Vendors": "function",
+  "Sagamore.Apps.Receipts": "function",
+  "Sagamore.Apps.RedirectTo": "function",
+  "Sagamore.Apps.Reporting": "object",
+  "Sagamore.Apps.Reporting.SavedReports": "function",
+  "Sagamore.Apps.Roles": "function",
+  "Sagamore.Apps.Sales": "object",
+  "Sagamore.Apps.Sales.Invoices": "function",
+  "Sagamore.Apps.Sales.Orders": "function",
+  "Sagamore.Apps.Sales.Orders.Distribute": "function",
+  "Sagamore.Apps.Sales.Orders.EditView": "function",
+  "Sagamore.Apps.Sales.Orders.Fulfill": "function",
+  "Sagamore.Apps.Sales.Orders.HeaderView": "function",
+  "Sagamore.Apps.Sales.Orders.TableView": "function",
+  "Sagamore.Apps.Sales.Plans": "function",
+  "Sagamore.Apps.Sales.PointOfSale": "function",
+  "Sagamore.Apps.Settings": "function",
+  "Sagamore.Apps.SetupChecklist": "function",
+  "Sagamore.Apps.Support": "function",
+  "Sagamore.Apps.Tax": "object",
+  "Sagamore.Apps.Tax.Jurisdictions": "function",
+  "Sagamore.Apps.TestDrive": "function",
+  "Sagamore.Apps.Tokens": "function",
+  "Sagamore.Audio": "function",
+  "Sagamore.BrowserPlugin": "function",
+  "Sagamore.CIRCULAR_DEPENDENCIES": "object",
+  "Sagamore.CIRCULAR_DEPENDENCIES.CollectionsItems": "function",
+  "Sagamore.CIRCULAR_DEPENDENCIES.CollectionsLocations": "function",
+  "Sagamore.CIRCULAR_DEPENDENCIES.Model": "function",
+  "Sagamore.CIRCULAR_DEPENDENCIES.ModelsLocation": "function",
+  "Sagamore.Components": "object",
+  "Sagamore.Components.AbsoluteTime": "function",
+  "Sagamore.Components.AlertBox": "function",
+  "Sagamore.Components.Authorization": "object",
+  "Sagamore.Components.Authorization.UnauthorizedPage": "function",
+  "Sagamore.Components.BackboneCollectionPager": "function",
+  "Sagamore.Components.BackboneView": "function",
+  "Sagamore.Components.Branding": "object",
+  "Sagamore.Components.Branding.Edit": "object",
+  "Sagamore.Components.Branding.Edit.Form": "function",
+  "Sagamore.Components.Breadcrumbs": "function",
+  "Sagamore.Components.Button": "function",
+  "Sagamore.Components.Carousel": "function",
+  "Sagamore.Components.CollectionSearch": "function",
+  "Sagamore.Components.CollectionSortLink": "function",
+  "Sagamore.Components.CollectionTable": "function",
+  "Sagamore.Components.CustomFieldInput": "object",
+  "Sagamore.Components.Customers": "object",
+  "Sagamore.Components.Customers.MergeCustomers": "function",
+  "Sagamore.Components.DropdownOption": "function",
+  "Sagamore.Components.DropdownOptionGroup": "function",
+  "Sagamore.Components.Ecommerces": "object",
+  "Sagamore.Components.Ecommerces.List": "object",
+  "Sagamore.Components.HiddenInput": "function",
+  "Sagamore.Components.Images": "object",
+  "Sagamore.Components.Images.Link": "function",
+  "Sagamore.Components.Images.List": "function",
+  "Sagamore.Components.Images.Show": "function",
+  "Sagamore.Components.Images.Upload": "object",
+  "Sagamore.Components.Images.Upload.UrlForm": "function",
+  "Sagamore.Components.Imports": "object",
+  "Sagamore.Components.Imports.Breadcrumb": "function",
+  "Sagamore.Components.Imports.EditPage": "function",
+  "Sagamore.Components.Imports.Error": "function",
+  "Sagamore.Components.Imports.Errors": "object",
+  "Sagamore.Components.Imports.Errors.Details": "object",
+  "Sagamore.Components.Imports.Errors.Details.Default": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers": "object",
+  "Sagamore.Components.Imports.Errors.Resolvers.KeyValidation": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups": "object",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups.FinancialItemClass": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups.GiftCardAdjustmentReason": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups.Item": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups.Location": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.Lookups.Vendor": "function",
+  "Sagamore.Components.Imports.Errors.Resolvers.ModelValidation": "function",
+  "Sagamore.Components.Imports.Mapper": "function",
+  "Sagamore.Components.Imports.Mapper.Dropdown": "function",
+  "Sagamore.Components.Imports.Mapper.Fields": "function",
+  "Sagamore.Components.Imports.Mapper.Headers": "function",
+  "Sagamore.Components.Imports.Mapper.MissingFields": "function",
+  "Sagamore.Components.Imports.Mapper.Options": "function",
+  "Sagamore.Components.Imports.Menu": "function",
+  "Sagamore.Components.Imports.Options": "object",
+  "Sagamore.Components.Imports.Options.PurchasingOrderWithItem": "function",
+  "Sagamore.Components.Imports.Processing": "function",
+  "Sagamore.Components.Imports.Progression": "object",
+  "Sagamore.Components.Imports.Source": "function",
+  "Sagamore.Components.Imports.Sources": "function",
+  "Sagamore.Components.Imports.Spreadsheet": "function",
+  "Sagamore.Components.Imports.StatusPage": "function",
+  "Sagamore.Components.Imports.UploadPage": "function",
+  "Sagamore.Components.InlineList": "function",
+  "Sagamore.Components.Integrations": "object",
+  "Sagamore.Components.Integrations.ManagementOne": "object",
+  "Sagamore.Components.Integrations.ManagementOne.Export": "function",
+  "Sagamore.Components.Integrations.Quickbooks": "object",
+  "Sagamore.Components.Integrations.Quickbooks.FeatureDisabled": "function",
+  "Sagamore.Components.Inventory": "object",
+  "Sagamore.Components.Inventory.ItemCommitmentDetails": "function",
+  "Sagamore.Components.Inventory.ItemPurchaseOrderDetails": "function",
+  "Sagamore.Components.Inventory.QtyLink": "function",
+  "Sagamore.Components.ItemGrids": "object",
+  "Sagamore.Components.ItemGrids.EditDimension": "function",
+  "Sagamore.Components.ItemGrids.EditDimensions": "function",
+  "Sagamore.Components.ItemGrids.EditForm": "function",
+  "Sagamore.Components.ItemGrids.EditGridType": "function",
+  "Sagamore.Components.ItemGrids.EditItem": "function",
+  "Sagamore.Components.ItemGrids.EditItems": "object",
+  "Sagamore.Components.ItemGrids.EditPage": "object",
+  "Sagamore.Components.ItemGrids.EditPage.AddExistingItemsMode": "function",
+  "Sagamore.Components.ItemGrids.EditPage.GenerateItemsMode": "function",
+  "Sagamore.Components.ItemGrids.EditPage.Items": "function",
+  "Sagamore.Components.ItemGrids.EditPageRoot": "function",
+  "Sagamore.Components.ItemGrids.Grid": "object",
+  "Sagamore.Components.ItemGrids.Images": "function",
+  "Sagamore.Components.ItemGrids.Images.DefaultMode": "function",
+  "Sagamore.Components.ItemGrids.Images.EditDimension": "function",
+  "Sagamore.Components.ItemGrids.ListPage": "function",
+  "Sagamore.Components.ItemGrids.NewPage": "function",
+  "Sagamore.Components.ItemGrids.Table": "function",
+  "Sagamore.Components.Items": "object",
+  "Sagamore.Components.Items.EditPage": "object",
+  "Sagamore.Components.Items.EditPage.CompactForm": "function",
+  "Sagamore.Components.Items.EditPage.CustomFields": "function",
+  "Sagamore.Components.Items.EditPage.Form": "object",
+  "Sagamore.Components.Items.EditPage.Form.DefaultCostOrDynamicMarginInput": "function",
+  "Sagamore.Components.Items.EditPage.Options": "function",
+  "Sagamore.Components.Items.EditPage.VendorDetail": "function",
+  "Sagamore.Components.Items.EditPage.Vendors": "function",
+  "Sagamore.Components.Items.MergeItems": "function",
+  "Sagamore.Components.Items.PageLink": "function",
+  "Sagamore.Components.Layouts": "object",
+  "Sagamore.Components.Layouts.Blank": "function",
+  "Sagamore.Components.Layouts.Default": "function",
+  "Sagamore.Components.Layouts.GettingStarted": "function",
+  "Sagamore.Components.Layouts.GettingStartedWithTips": "function",
+  "Sagamore.Components.Layouts.Loading": "function",
+  "Sagamore.Components.Layouts.Menu": "function",
+  "Sagamore.Components.Layouts.NoBackground": "function",
+  "Sagamore.Components.Layouts.Settings": "function",
+  "Sagamore.Components.Locations": "object",
+  "Sagamore.Components.Locations.Dropdown": "function",
+  "Sagamore.Components.Locations.List": "function",
+  "Sagamore.Components.Lookup": "function",
+  "Sagamore.Components.Lookups": "object",
+  "Sagamore.Components.Lookups.FinancialAccount": "function",
+  "Sagamore.Components.Lookups.FinancialItemClass": "function",
+  "Sagamore.Components.Lookups.GiftCard": "object",
+  "Sagamore.Components.Lookups.GiftCard.AdjustmentReason": "function",
+  "Sagamore.Components.Lookups.Item": "function",
+  "Sagamore.Components.Lookups.Location": "function",
+  "Sagamore.Components.Lookups.MassAction": "function",
+  "Sagamore.Components.Lookups.MassActions": "object",
+  "Sagamore.Components.Lookups.MassActions.AddSelected": "function",
+  "Sagamore.Components.Lookups.MassActions.SelectItemsByGrid": "function",
+  "Sagamore.Components.Lookups.Table": "function",
+  "Sagamore.Components.Lookups.Vendor": "function",
+  "Sagamore.Components.Merge": "object",
+  "Sagamore.Components.Merge.Form": "function",
+  "Sagamore.Components.Merge.Option": "function",
+  "Sagamore.Components.Mixins": "object",
+  "Sagamore.Components.Mixins.AddPayment": "object",
+  "Sagamore.Components.Mixins.AddPayment._isCFDEnabled": "function",
+  "Sagamore.Components.Mixins.AddPayment.createCashPayment": "function",
+  "Sagamore.Components.Mixins.AddPayment.createCheckPayment": "function",
+  "Sagamore.Components.Mixins.AddPayment.createCustomPayment": "function",
+  "Sagamore.Components.Mixins.AddPayment.createGiftCardPayment": "function",
+  "Sagamore.Components.Mixins.AddPayment.onAddPayment": "function",
+  "Sagamore.Components.Mixins.Backbone": "object",
+  "Sagamore.Components.Mixins.Backbone.componentDidMount": "function",
+  "Sagamore.Components.Mixins.Backbone.componentWillUnmount": "function",
+  "Sagamore.Components.Mixins.Backbone.getBackboneModels": "function",
+  "Sagamore.Components.Mixins.Backbone.watchBackboneModel": "function",
+  "Sagamore.Components.Mixins.CollectionURL": "object",
+  "Sagamore.Components.Mixins.CollectionURL.componentDidMount": "function",
+  "Sagamore.Components.Mixins.CollectionURL.componentWillUnmount": "function",
+  "Sagamore.Components.Mixins.CollectionURL.propTypes": "object",
+  "Sagamore.Components.Mixins.CollectionURL.propTypes.baseURL": "function",
+  "Sagamore.Components.Mixins.CollectionURL.propTypes.collection": "function",
+  "Sagamore.Components.Mixins.CollectionURL.propTypes.initialParams": "function",
+  "Sagamore.Components.Mixins.CollectionURL.updateURLFromCollection": "function",
+  "Sagamore.Components.Mixins.Dialog": "object",
+  "Sagamore.Components.Mixins.Dialog.showInDialog": "function",
+  "Sagamore.Components.Mixins.Dialog.showViewInDialog": "function",
+  "Sagamore.Components.Mixins.FormHelpers": "object",
+  "Sagamore.Components.Mixins.FormHelpers.deleteButton": "function",
+  "Sagamore.Components.Mixins.FormHelpers.formField": "function",
+  "Sagamore.Components.Mixins.FormHelpers.getDefaultProps": "function",
+  "Sagamore.Components.Mixins.FormHelpers.handleBlur": "function",
+  "Sagamore.Components.Mixins.FormHelpers.handleChange": "function",
+  "Sagamore.Components.Mixins.FormHelpers.handleDelete": "function",
+  "Sagamore.Components.Mixins.FormHelpers.handleReset": "function",
+  "Sagamore.Components.Mixins.FormHelpers.handleSubmit": "function",
+  "Sagamore.Components.Mixins.FormHelpers.resetButton": "function",
+  "Sagamore.Components.Mixins.FormHelpers.saveButton": "function",
+  "Sagamore.Components.Mixins.OnBeforeUnload": "object",
+  "Sagamore.Components.Mixins.OnBeforeUnload.componentDidMount": "function",
+  "Sagamore.Components.Mixins.OnBeforeUnload.componentWillUnmount": "function",
+  "Sagamore.Components.Mixins.Selection": "object",
+  "Sagamore.Components.Mixins.Selection.UNSAFE_componentWillReceiveProps": "function",
+  "Sagamore.Components.Mixins.Selection.addSelectedValue": "function",
+  "Sagamore.Components.Mixins.Selection.addSelectedValues": "function",
+  "Sagamore.Components.Mixins.Selection.areAllSelected": "function",
+  "Sagamore.Components.Mixins.Selection.areSelected": "function",
+  "Sagamore.Components.Mixins.Selection.clearSelectedValues": "function",
+  "Sagamore.Components.Mixins.Selection.getInitialState": "function",
+  "Sagamore.Components.Mixins.Selection.handleSelectionCheckboxChange": "function",
+  "Sagamore.Components.Mixins.Selection.isSelected": "function",
+  "Sagamore.Components.Mixins.Selection.removeSelectedValues": "function",
+  "Sagamore.Components.Mixins.Selection.selectPageCheckbox": "function",
+  "Sagamore.Components.Mixins.Selection.selectedValues": "function",
+  "Sagamore.Components.Mixins.Selection.selectionCheckbox": "function",
+  "Sagamore.Components.Mixins.Selection.toggleSelectedValue": "function",
+  "Sagamore.Components.Mixins.Selection.toggleSelectedValues": "function",
+  "Sagamore.Components.Mixins.Selection.updateSelectedValuesState": "function",
+  "Sagamore.Components.Mixins.SetInterval": "object",
+  "Sagamore.Components.Mixins.SetInterval.UNSAFE_componentWillMount": "function",
+  "Sagamore.Components.Mixins.SetInterval.componentWillUnmount": "function",
+  "Sagamore.Components.Mixins.SetInterval.setInterval": "function",
+  "Sagamore.Components.Mixins.States": "object",
+  "Sagamore.Components.Mixins.States.Ticket": "object",
+  "Sagamore.Components.Mixins.TestDrive": "object",
+  "Sagamore.Components.Mixins.TestDrive.UNSAFE_componentWillMount": "function",
+  "Sagamore.Components.Mixins.TestDrive._onConfirmSubscription": "function",
+  "Sagamore.Components.Mixins.TestDrive._subscription": "function",
+  "Sagamore.Components.Mixins.TestDrive.componentWillUnmount": "function",
+  "Sagamore.Components.ModelHelpers": "object",
+  "Sagamore.Components.ModelHelpers.BackboneModelCreatedAndUpdatedBy": "function",
+  "Sagamore.Components.Notices": "object",
+  "Sagamore.Components.Notices.POS": "object",
+  "Sagamore.Components.POS": "object",
+  "Sagamore.Components.POS.Lines": "object",
+  "Sagamore.Components.POS.Notices": "function",
+  "Sagamore.Components.POS.Settings": "object",
+  "Sagamore.Components.Pager": "function",
+  "Sagamore.Components.Paginator": "function",
+  "Sagamore.Components.Payments": "object",
+  "Sagamore.Components.Payments.Devices": "object",
+  "Sagamore.Components.Payments.Gateways": "object",
+  "Sagamore.Components.Payments.Gateways.Econduit": "object",
+  "Sagamore.Components.Payments.GiftCard": "function",
+  "Sagamore.Components.Payments.NewPaymentForm": "object",
+  "Sagamore.Components.Payments.PaymentMethod": "function",
+  "Sagamore.Components.Payments.PaymentProcess": "object",
+  "Sagamore.Components.Payments.PaymentProcess.Webhook": "function",
+  "Sagamore.Components.Payments.PaymentProcess.Webhook.Block": "function",
+  "Sagamore.Components.Payments.PaymentProcess.Webhook.Input": "function",
+  "Sagamore.Components.Payments.PaymentProcess.Webhook.Link": "function",
+  "Sagamore.Components.Payments.PaymentProcessForm": "function",
+  "Sagamore.Components.Payments.PluginDeviceTransaction": "function",
+  "Sagamore.Components.Payments.ProcessCreditCardPayment": "function",
+  "Sagamore.Components.Payments.ProcessPluginPayment": "function",
+  "Sagamore.Components.Payments.VoidPluginPayment": "function",
+  "Sagamore.Components.Pos": "object",
+  "Sagamore.Components.Pos.TicketRefetch": "function",
+  "Sagamore.Components.Pos.TicketRefetch.ObsoleteMessage": "function",
+  "Sagamore.Components.PriceMargin": "function",
+  "Sagamore.Components.Purchasing": "object",
+  "Sagamore.Components.Purchasing.Orders": "object",
+  "Sagamore.Components.Purchasing.Orders.Duplicate": "object",
+  "Sagamore.Components.Receipts": "object",
+  "Sagamore.Components.RelativeTime": "function",
+  "Sagamore.Components.Sales": "object",
+  "Sagamore.Components.Sales.Order": "object",
+  "Sagamore.Components.Sales.Orders": "object",
+  "Sagamore.Components.Sales.Orders.AddPayment": "function",
+  "Sagamore.Components.Sales.Orders.FeatureDisabled": "function",
+  "Sagamore.Components.Sales.Orders.LineTable": "object",
+  "Sagamore.Components.Sales.Orders.LineTable.Body": "object",
+  "Sagamore.Components.Sales.Orders.LineTable.Body.Row": "object",
+  "Sagamore.Components.Sales.Tickets": "object",
+  "Sagamore.Components.Select2": "function",
+  "Sagamore.Components.Settings": "object",
+  "Sagamore.Components.Settings.Branding": "function",
+  "Sagamore.Components.Settings.CreditCards": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections.ChooseGateway": "function",
+  "Sagamore.Components.Settings.CreditCards.Connections.Edit": "function",
+  "Sagamore.Components.Settings.CreditCards.Connections.GatewayForm": "function",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways.Econduit": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways.Econduit.Form": "function",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways.Heartland": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways.Pax": "object",
+  "Sagamore.Components.Settings.CreditCards.Connections.Gateways.Pax.Form": "function",
+  "Sagamore.Components.Settings.CreditCards.Connections.New": "function",
+  "Sagamore.Components.Settings.CreditCards.Main": "function",
+  "Sagamore.Components.Settings.CreditCards.Main.Row": "function",
+  "Sagamore.Components.Settings.CreditCards.Main.Table": "function",
+  "Sagamore.Components.Settings.CustomFields": "object",
+  "Sagamore.Components.Settings.GridTemplates": "object",
+  "Sagamore.Components.Settings.GridTemplates.EditDescription": "function",
+  "Sagamore.Components.Settings.PaymentTypes": "object",
+  "Sagamore.Components.Settings.PaymentTypes.FeatureDisabled": "function",
+  "Sagamore.Components.Settings.Pos": "object",
+  "Sagamore.Components.Settings.ReasonCodes": "function",
+  "Sagamore.Components.Settings.Sales": "object",
+  "Sagamore.Components.Settings.Sales.Plans": "object",
+  "Sagamore.Components.Settings.Sales.Plans.NewForm": "function",
+  "Sagamore.Components.SetupErrorMessage": "function",
+  "Sagamore.Components.Shared": "object",
+  "Sagamore.Components.Shared.Loading": "object",
+  "Sagamore.Components.Sheet": "function",
+  "Sagamore.Components.Switch": "function",
+  "Sagamore.Components.Tab": "function",
+  "Sagamore.Components.TenantCreationMessage": "function",
+  "Sagamore.Components.TestDrive": "object",
+  "Sagamore.Components.TestDrive.Instructions": "function",
+  "Sagamore.Components.Time": "function",
+  "Sagamore.Components.TimezoneDropdown": "function",
+  "Sagamore.Constants": "object",
+  "Sagamore.Controllers": "object",
+  "Sagamore.Controllers.Imports": "object",
+  "Sagamore.Controllers.Imports.Edit": "function",
+  "Sagamore.Errors": "object",
+  "Sagamore.Errors.StationClaimFailure": "function",
+  "Sagamore.Errors.StationInUse": "function",
+  "Sagamore.Fixtures": "object",
+  "Sagamore.Fixtures.CustomFields": "object",
+  "Sagamore.Fixtures.GridTemplate": "object",
+  "Sagamore.Fixtures.GridTemplates": "object",
+  "Sagamore.Fixtures.Item": "object",
+  "Sagamore.Fixtures.ItemGrid": "object",
+  "Sagamore.Fixtures.ItemGrids": "object",
+  "Sagamore.Fixtures.Items": "object",
+  "Sagamore.Fixtures.Location": "object",
+  "Sagamore.Fixtures.Locations": "object",
+  "Sagamore.Fixtures.Purchasing": "object",
+  "Sagamore.Fixtures.ReasonCodes": "object",
+  "Sagamore.Fixtures.Sales": "object",
+  "Sagamore.Fixtures.Sales.Line": "object",
+  "Sagamore.Fixtures.Sales.Lines": "object",
+  "Sagamore.Fixtures.Sales.Order": "object",
+  "Sagamore.Fixtures.Sales.Plans": "object",
+  "Sagamore.Format": "object",
+  "Sagamore.Format.Currency": "object",
+  "Sagamore.Format.Currency._bindInput": "function",
+  "Sagamore.Format.Currency._value": "function",
+  "Sagamore.Format.Currency.initialize": "function",
+  "Sagamore.Format.Currency.render": "function",
+  "Sagamore.Format.Currency.triggerChange": "function",
+  "Sagamore.Format.DateTime": "object",
+  "Sagamore.Format.DateTime._dateVal": "function",
+  "Sagamore.Format.DateTime._formatDate": "function",
+  "Sagamore.Format.DateTime._parseDate": "function",
+  "Sagamore.Format.DateTime._value": "function",
+  "Sagamore.Format.DateTime.defaultFormat": "string",
+  "Sagamore.Format.DateTime.formatDate": "function",
+  "Sagamore.Format.DateTime.initialize": "function",
+  "Sagamore.Format.DateTime.render": "function",
+  "Sagamore.Formats": "instance",
+  "Sagamore.GlobalStates": "object",
+  "Sagamore.GlobalStates.StationClaimed": "function",
+  "Sagamore.GoogleAnalyticsHelper": "function",
+  "Sagamore.Lib": "object",
+  "Sagamore.Lib.FetchStatus": "object",
+  "Sagamore.Lib.FetchStatus.checkStatus": "function",
+  "Sagamore.Lib.FetchStatus.parseError": "function",
+  "Sagamore.Lib.FetchStatus.parseResponse": "function",
+  "Sagamore.Lib.QueryString": "instance",
+  "Sagamore.Lib.Spec": "object",
+  "Sagamore.LocalStorage": "function",
+  "Sagamore.Menus": "object",
+  "Sagamore.Mixins": "object",
+  "Sagamore.Mixins.Imports": "function",
+  "Sagamore.Models": "object",
+  "Sagamore.Models.CashDrawer": "function",
+  "Sagamore.Models.CashPaid": "object",
+  "Sagamore.Models.Coupon": "function",
+  "Sagamore.Models.DailySummary": "es-class",
+  "Sagamore.Models.DailySummaryNote": "es-class",
+  "Sagamore.Models.Ecommerces": "object",
+  "Sagamore.Models.Ecommerces.Magento": "object",
+  "Sagamore.Models.Financial": "object",
+  "Sagamore.Models.GiftCard": "function",
+  "Sagamore.Models.Import": "object",
+  "Sagamore.Models.Import.Set": "object",
+  "Sagamore.Models.Integrations": "object",
+  "Sagamore.Models.Integrations.Quickbooks": "object",
+  "Sagamore.Models.Inventory": "object",
+  "Sagamore.Models.Inventory.Transfer": "object",
+  "Sagamore.Models.ItemGrid": "object",
+  "Sagamore.Models.PaymentGatewayConnection": "function",
+  "Sagamore.Models.PaymentType": "function",
+  "Sagamore.Models.Purchasing": "object",
+  "Sagamore.Models.Purchasing.Receipt": "object",
+  "Sagamore.Models.QuickActions": "object",
+  "Sagamore.Models.Role": "es-class",
+  "Sagamore.Models.Sales": "object",
+  "Sagamore.Models.Sales.Order": "es-class",
+  "Sagamore.Models.Sales.TestTicket": "es-class",
+  "Sagamore.Notifications": "object",
+  "Sagamore.PrintManager": "function",
+  "Sagamore.ScanAndPrint": "function",
+  "Sagamore.SelectionCollection": "function",
+  "Sagamore.Sources": "object",
+  "Sagamore.Stores": "object",
+  "Sagamore.Stores.POS": "object",
+  "Sagamore.Stores.Payments": "object",
+  "Sagamore.Stores.Payments.NewPaymentForm": "object",
+  "Sagamore.Stores.Ticket": "object",
+  "Sagamore.Stores.Ticket.ReasonsDialog": "object",
+  "Sagamore.Views": "object",
+  "Sagamore.Views.CollectionTable": "function",
+  "Sagamore.Views.Component": "es-class",
+  "Sagamore.Views.ConfirmDialog": "es-class",
+  "Sagamore.Views.Customer": "object",
+  "Sagamore.Views.Dialog": "function",
+  "Sagamore.Views.Extensions": "object",
+  "Sagamore.Views.Forms": "object",
+  "Sagamore.Views.Forms.User": "object",
+  "Sagamore.Views.Inputs": "object",
+  "Sagamore.Views.Inputs.Lookup": "function",
+  "Sagamore.Views.Item": "object",
+  "Sagamore.Views.Loading": "es-class",
+  "Sagamore.Views.LookupDialog": "function",
+  "Sagamore.Views.LookupTable": "function",
+  "Sagamore.Views.MultiSelectTable": "es-class",
+  "Sagamore.Views.Notes": "object",
+  "Sagamore.Views.Paginator": "es-class",
+  "Sagamore.Views.Payments": "object",
+  "Sagamore.Views.RelativeTime": "es-class",
+  "Sagamore.Views.Search": "es-class",
+  "Sagamore.Views.SortLink": "es-class",
+  "Sagamore.Views.Stations": "object",
+  "Sagamore.Views.Stations.Form": "es-class",
+  "Sagamore.Views.Stations.Select": "es-class",
+  "Sagamore.disableLogEvents": "function",
+  "Sagamore.enableLogEvents": "function",
+  "Sagamore.logEvents": "boolean",
+  "Sagamore.setLogEvents": "function",
+  "Sagamore.start": "function"
+ },
+ "appsRoutes": {
+  "Sagamore.Apps.Applications": {
+   "": "list",
+   ":id": "show"
+  },
+  "Sagamore.Apps.CashDrawers": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Collection": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.CreditCards": {
+   "": "main",
+   "edit/:id": "edit",
+   ":location_id/connections/edit/:id": "editConnection",
+   ":location_id/connections/new": "newConnection"
+  },
+  "Sagamore.Apps.Default": {
+   "*path": "notFound",
+   "": "default"
+  },
+  "Sagamore.Apps.Ecommerces": {
+   "magento/list": "magentoList",
+   "magento/connection(/:id)": "magentoConnection",
+   "big-commerce/list": "bigCommerceList",
+   "big-commerce/connection(/:id)": "bigCommerceConnection"
+  },
+  "Sagamore.Apps.Financial": {
+   "": "main",
+   "item-classes": "handleItemClasses"
+  },
+  "Sagamore.Apps.GiftCard.Adjustments": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.GiftCards": {
+   "": "lookup",
+   "edit/:number": "edit",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.GridTemplates": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "new": "new"
+  },
+  "Sagamore.Apps.Integrations": {
+   "": "main",
+   "trac": "trac",
+   "easypost": "easypost",
+   "retail-online": "retailOnline"
+  },
+  "Sagamore.Apps.Integrations.Clover": {
+   "launch?*queryString": "launch"
+  },
+  "Sagamore.Apps.Integrations.Mailchimp": {
+   "": "main"
+  },
+  "Sagamore.Apps.Integrations.ManagementOne": {
+   "": "main"
+  },
+  "Sagamore.Apps.Integrations.Nuorder": {
+   "": "main",
+   "brands": "main",
+   "orders": "orders",
+   "errors": "errors",
+   "brand/:id": "brand",
+   "brands/new": "newBrand",
+   "sync-prior-orders": "syncPriorOrders"
+  },
+  "Sagamore.Apps.Integrations.Quickbooks": {
+   "": "main"
+  },
+  "Sagamore.Apps.Integrations.Quickbooks.MainView": null,
+  "Sagamore.Apps.Integrations.Quickbooks.StatusView": null,
+  "Sagamore.Apps.Integrations.Quickbooks.TableRowView": null,
+  "Sagamore.Apps.Inventory.AdjustmentSets": {
+   "": "list",
+   "new": "new",
+   "edit/:id": "edit"
+  },
+  "Sagamore.Apps.Inventory.PhysicalCounts": {
+   "": "list",
+   "list": "list",
+   "list/:params": "list",
+   "unacknowledged_discrepancies": "unacknowledgedDiscrepancies",
+   "new": "new",
+   "edit/:id": "edit",
+   ":id/batches/edit/:batch_id": "editBatch",
+   ":id/batches/edit/:batch_id/imports/sources": "importsSources",
+   ":id/batches/edit/:batch_id/imports/sources/:source": "importsForm",
+   ":id/batches/edit/:batch_id/imports/:id/mapper": "importsMapper",
+   ":id/batches/edit/:batch_id/imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Inventory.Transfers": {
+   "": "list",
+   ":params": "list",
+   "edit/:id": "edit",
+   "edit/:id/imports/sources": "importsSources",
+   "edit/:id/imports/sources/:source": "importsForm",
+   "edit/:id/imports/:id/mapper": "importsMapper",
+   "edit/:id/imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.ItemGrids": {
+   "": "list",
+   "list": "list",
+   "list/:params": "list",
+   "edit/:id": "edit",
+   "edit/:id/:mode": "edit",
+   "new": "new",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.MyAccount": {
+   "": "redirectToEdit",
+   "edit": "edit",
+   "edit/": "edit",
+   "edit/:section": "edit"
+  },
+  "Sagamore.Apps.PaymentTypes": {
+   "": "list",
+   "edit/:id": "edit",
+   "new": "create"
+  },
+  "Sagamore.Apps.Pos": {
+   "": "pos",
+   ":id": "editTicket",
+   "layaway/new": "newLayaway"
+  },
+  "Sagamore.Apps.Pos.DrawerCounts": {
+   "": "findCurrent",
+   ":id": "drawerCount",
+   ":id?:params": "drawerCount"
+  },
+  "Sagamore.Apps.Pos.HeaderView": null,
+  "Sagamore.Apps.Purchasing.Receipts": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "new": "new",
+   "list/:params": "list"
+  },
+  "Sagamore.Apps.Purchasing.Receipts.HeaderView": null,
+  "Sagamore.Apps.Purchasing.Returns": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Purchasing.Vendors": {
+   "": "list",
+   "list": "list",
+   "list/:params": "list",
+   "new": "new",
+   "edit/:id": "edit",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Receipts": {
+   "": "name:anonymous"
+  },
+  "Sagamore.Apps.RedirectTo": {
+   "*resource/?*query": "redirect"
+  },
+  "Sagamore.Apps.Reporting.SavedReports": {
+   "": "list",
+   ":params": "list"
+  },
+  "Sagamore.Apps.Roles": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.Invoices": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.Orders": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.Orders.Distribute": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.Orders.EditView": null,
+  "Sagamore.Apps.Sales.Orders.Fulfill": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.Orders.HeaderView": null,
+  "Sagamore.Apps.Sales.Orders.TableView": null,
+  "Sagamore.Apps.Sales.Plans": {
+   "": "list",
+   "list": "list",
+   "edit/:id": "edit",
+   "edit/:id/:params": "edit",
+   "new": "create",
+   "new/:params": "create",
+   "list/:params": "list",
+   ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+   "imports/sources": "importsSources",
+   "imports/sources/:source": "importsForm",
+   "imports/:id/mapper": "importsMapper",
+   "imports/:id/status": "importsStatus"
+  },
+  "Sagamore.Apps.Sales.PointOfSale": {
+   "": "redirect",
+   "/:id": "redirect"
+  },
+  "Sagamore.Apps.Settings": {
+   "branding": "branding",
+   "company": "company",
+   "inventory": "inventory",
+   "reporting": "reporting",
+   "owner": "owner",
+   "reason-codes": "reasonCodes",
+   "reason-codes/:type": "listReasonCodes",
+   "reason-codes/:type/:params": "listReasonCodes",
+   "reason-codes/:type/new": "newReasonCode",
+   "reason-codes/:type/edit/:id": "editReasonCode",
+   "pos": "pos",
+   "pos/quick_items_settings/new": "newQuickItemsSettings",
+   "pos/quick_items_settings/edit/:id": "editQuickItemsSettings",
+   "purchasing": "purchasing",
+   "price_lists": "priceLists",
+   "price_lists/new": "newPriceList",
+   "price_lists/edit/:id": "editPriceList",
+   "general": "general",
+   "cash_discounting": "cashDiscounting",
+   "cash_discounting/edit/:id": "editCashDiscounting"
+  },
+  "Sagamore.Apps.SetupChecklist": {
+   "": "checklist"
+  },
+  "Sagamore.Apps.Support": {
+   "": "redirectToSupport"
+  },
+  "Sagamore.Apps.Tax.Jurisdictions": {
+   "": "list",
+   ":params": "list",
+   "edit/:id": "edit",
+   "new": "new"
+  },
+  "Sagamore.Apps.TestDrive": {
+   "*": "default",
+   "pending": "pending",
+   "expired": "expired",
+   "subscription": "subscription",
+   "instructions": "instructions"
+  },
+  "Sagamore.Apps.Tokens": {
+   "": "list",
+   "new": "new",
+   "edit/:id": "edit"
+  }
+ },
+ "layouts": [
+  "Blank",
+  "Default",
+  "GettingStarted",
+  "GettingStartedWithTips",
+  "Loading",
+  "Menu",
+  "NoBackground",
+  "Settings"
+ ],
+ "importErrorDetails": [
+  "Default"
+ ],
+ "importErrorResolvers": {
+  "KeyValidation": "function",
+  "Lookups": [
+   "FinancialItemClass",
+   "GiftCardAdjustmentReason",
+   "Item",
+   "Location",
+   "Vendor"
+  ],
+  "ModelValidation": "function"
+ },
+ "formats": [
+  "capitalize",
+  "currency",
+  "currencyWithoutSymbol",
+  "date",
+  "dateMonth",
+  "dateTime",
+  "dateTimeUTC",
+  "dateUTC",
+  "formatDate",
+  "hour",
+  "hourRange",
+  "month",
+  "number",
+  "percent",
+  "qty",
+  "qtyDelta",
+  "sentence",
+  "shortDate",
+  "shortDateTime",
+  "shorterDate",
+  "string",
+  "time",
+  "timeUTC",
+  "underscorize",
+  "unformatCurrency"
+ ],
+ "appOptions": [
+  {
+   "module": null,
+   "prefix": null,
+   "appClass": "module:sagamore/apps/default",
+   "routes": {
+    "*path": "notFound",
+    "": "default"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "redirect-to",
+   "appClass": "module:sagamore/apps/redirect_to",
+   "routes": {
+    "*resource/?*query": "redirect"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "locations",
+   "appClass": "module:sagamore/apps/locations",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "settings",
+   "appClass": "module:sagamore/apps/settings",
+   "routes": {
+    "branding": "branding",
+    "company": "company",
+    "inventory": "inventory",
+    "reporting": "reporting",
+    "owner": "owner",
+    "reason-codes": "reasonCodes",
+    "reason-codes/:type": "listReasonCodes",
+    "reason-codes/:type/:params": "listReasonCodes",
+    "reason-codes/:type/new": "newReasonCode",
+    "reason-codes/:type/edit/:id": "editReasonCode",
+    "pos": "pos",
+    "pos/quick_items_settings/new": "newQuickItemsSettings",
+    "pos/quick_items_settings/edit/:id": "editQuickItemsSettings",
+    "purchasing": "purchasing",
+    "price_lists": "priceLists",
+    "price_lists/new": "newPriceList",
+    "price_lists/edit/:id": "editPriceList",
+    "general": "general",
+    "cash_discounting": "cashDiscounting",
+    "cash_discounting/edit/:id": "editCashDiscounting"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "settings/credit-cards",
+   "appClass": "module:sagamore/apps/credit_cards",
+   "routes": {
+    "": "main",
+    "edit/:id": "edit",
+    ":location_id/connections/edit/:id": "editConnection",
+    ":location_id/connections/new": "newConnection"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "settings/pos/quick_items_settings",
+   "appClass": "module:sagamore/apps/quick_items_settings",
+   "routes": {
+    "": "main"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "settings/pos/sort_button_groups",
+   "appClass": "module:sagamore/apps/sort_button_groups",
+   "routes": {
+    "": "main",
+    ":id": "child"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "stations",
+   "appClass": "module:sagamore/apps/stations",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "cash-drawers",
+   "appClass": "Sagamore.Apps.CashDrawers",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "receipts",
+   "appClass": "module:sagamore/apps/receipts",
+   "routes": {
+    "": "name:anonymous"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "users",
+   "appClass": "module:sagamore/apps/users",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "roles",
+   "appClass": "Sagamore.Apps.Roles",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "custom-fields",
+   "appClass": "module:sagamore/apps/custom_fields",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "sort/:id": "sort"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "financial",
+   "appClass": "module:sagamore/apps/financial",
+   "routes": {
+    "": "main",
+    "item-classes": "handleItemClasses"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "grid-templates",
+   "appClass": "module:sagamore/apps/grid_templates",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "new": "new"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "sales-plans",
+   "appClass": "module:sagamore/apps/sales/plans",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "payment-types",
+   "appClass": "module:sagamore/apps/payment_types",
+   "routes": {
+    "": "list",
+    "edit/:id": "edit",
+    "new": "create"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "tax/rules",
+   "appClass": "module:sagamore/apps/tax/rules",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "archived": "archived",
+    "archived/:params": "archived",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "tax/jurisdictions",
+   "appClass": "Sagamore.Apps.Tax.Jurisdictions",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "edit/:id": "edit",
+    "new": "new"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "shipping",
+   "appClass": "module:sagamore/apps/shipping",
+   "routes": {
+    "": "index"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "shipping/carriers",
+   "appClass": "module:sagamore/apps/shipping/carriers",
+   "routes": {
+    "": "list"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "shipping/methods",
+   "appClass": "module:sagamore/apps/shipping/methods",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "new": "new",
+    "notifications": "notifications"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "shipping/notifications",
+   "appClass": "module:sagamore/apps/shipping/notifications",
+   "routes": {
+    "": "list"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations",
+   "appClass": "module:sagamore/apps/integrations",
+   "routes": {
+    "": "main",
+    "trac": "trac",
+    "easypost": "easypost",
+    "retail-online": "retailOnline"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations/clover",
+   "appClass": "module:sagamore/apps/integrations/clover",
+   "routes": {
+    "launch?*queryString": "launch"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations/quickbooks",
+   "appClass": "module:sagamore/apps/integrations/quickbooks",
+   "routes": {
+    "": "main"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations/management-one",
+   "appClass": "module:sagamore/apps/integrations/management_one",
+   "routes": {
+    "": "main"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations/nuorder",
+   "appClass": "module:sagamore/apps/integrations/nuorder",
+   "routes": {
+    "": "main",
+    "brands": "main",
+    "orders": "orders",
+    "errors": "errors",
+    "brand/:id": "brand",
+    "brands/new": "newBrand",
+    "sync-prior-orders": "syncPriorOrders"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "integrations/mailchimp",
+   "appClass": "module:sagamore/apps/integrations/mailchimp",
+   "routes": {
+    "": "main"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "ecommerce",
+   "appClass": "module:sagamore/apps/ecommerces",
+   "routes": {
+    "magento/list": "magentoList",
+    "magento/connection(/:id)": "magentoConnection",
+    "big-commerce/list": "bigCommerceList",
+    "big-commerce/connection(/:id)": "bigCommerceConnection"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "ecommerces",
+   "appClass": "module:sagamore/apps/ecommerces",
+   "routes": {
+    "magento/list": "magentoList",
+    "magento/connection(/:id)": "magentoConnection",
+    "big-commerce/list": "bigCommerceList",
+    "big-commerce/connection(/:id)": "bigCommerceConnection"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "webhooks",
+   "appClass": "module:sagamore/apps/webhooks",
+   "routes": {
+    "": "list",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "admin",
+   "prefix": "applications",
+   "appClass": "module:sagamore/apps/applications",
+   "routes": {
+    "": "list",
+    ":id": "show"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "bundles",
+   "appClass": "module:sagamore/apps/bundles",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "promotions",
+   "appClass": "module:sagamore/apps/promotions",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "archived": "archived",
+    "archived/:params": "archived",
+    "edit/:id": "edit",
+    "new": "new"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "coupons",
+   "appClass": "module:sagamore/apps/coupons",
+   "routes": {
+    "": "list",
+    "archived": "archived",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "inventory/adjustments",
+   "appClass": "module:sagamore/apps/inventory/adjustments",
+   "routes": {
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "inventory/adjustment-sets",
+   "appClass": "module:sagamore/apps/inventory/adjustment_sets",
+   "routes": {
+    "": "list",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "inventory/transfers",
+   "appClass": "module:sagamore/apps/inventory/transfers",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "edit/:id": "edit",
+    "edit/:id/imports/sources": "importsSources",
+    "edit/:id/imports/sources/:source": "importsForm",
+    "edit/:id/imports/:id/mapper": "importsMapper",
+    "edit/:id/imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "inventory/in-store-replenishment",
+   "appClass": "module:sagamore/apps/reporting/core_reports/core_reports_replenishment",
+   "routes": {
+    "": "index",
+    ":params": "index"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "items",
+   "appClass": "module:sagamore/apps/items",
+   "routes": {
+    "inventory/:id": "inventory",
+    "merge": "list",
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "item-grids",
+   "appClass": "module:sagamore/apps/item_grids",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "edit/:id": "edit",
+    "edit/:id/:mode": "edit",
+    "new": "new",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "inventory",
+   "prefix": "inventory/physical-counts",
+   "appClass": "module:sagamore/apps/inventory/physical_counts",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "unacknowledged_discrepancies": "unacknowledgedDiscrepancies",
+    "new": "new",
+    "edit/:id": "edit",
+    ":id/batches/edit/:batch_id": "editBatch",
+    ":id/batches/edit/:batch_id/imports/sources": "importsSources",
+    ":id/batches/edit/:batch_id/imports/sources/:source": "importsForm",
+    ":id/batches/edit/:batch_id/imports/:id/mapper": "importsMapper",
+    ":id/batches/edit/:batch_id/imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "purchasing",
+   "prefix": "purchasing/orders",
+   "appClass": "module:sagamore/apps/purchasing/orders",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "purchasing",
+   "prefix": "purchasing/receipts",
+   "appClass": "Sagamore.Apps.Purchasing.Receipts",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "new": "new",
+    "list/:params": "list"
+   }
+  },
+  {
+   "module": "purchasing",
+   "prefix": "purchasing/returns",
+   "appClass": "module:sagamore/apps/purchasing/returns",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "purchasing",
+   "prefix": "purchasing/vendors",
+   "appClass": "Sagamore.Apps.Purchasing.Vendors",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "new": "new",
+    "edit/:id": "edit",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/dashboard",
+   "appClass": "module:sagamore/apps/sales/dashboard",
+   "routes": {
+    "": "dashboard",
+    ":params": "dashboard"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "customers",
+   "appClass": "module:sagamore/apps/customers",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "new": "new",
+    "dashboard/:id?:params": "dashboard",
+    "edit/:id": "edit",
+    "edit/:id/:tab": "edit",
+    "merge": "list",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/orders",
+   "appClass": "module:sagamore/apps/sales/orders",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/orders/fulfill",
+   "appClass": "module:sagamore/apps/sales/orders/fulfill",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/orders/distribute",
+   "appClass": "module:sagamore/apps/sales/orders/distribute",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/invoices",
+   "appClass": "module:sagamore/apps/sales/invoices",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/tickets",
+   "appClass": "module:sagamore/apps/sales/tickets",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "sales/point-of-sale",
+   "appClass": "module:sagamore/apps/sales/point_of_sale",
+   "routes": {
+    "": "redirect",
+    "/:id": "redirect"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "gift-cards",
+   "appClass": "module:sagamore/apps/gift_cards",
+   "routes": {
+    "": "lookup",
+    "edit/:number": "edit",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "gift-card/adjustments",
+   "appClass": "module:sagamore/apps/gift_card/adjustments",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "gift-card/overdue-requests",
+   "appClass": "module:sagamore/apps/sales/gift_card/overdue_requests",
+   "routes": {
+    "": "main",
+    ":params": "main"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "cash-paid/transactions",
+   "appClass": "module:sagamore/apps/cash_paid/transactions",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "view/:transactionId": "readonly"
+   }
+  },
+  {
+   "module": "account",
+   "prefix": "my-account",
+   "appClass": "module:sagamore/apps/my_account",
+   "routes": {
+    "": "redirectToEdit",
+    "edit": "edit",
+    "edit/": "edit",
+    "edit/:section": "edit"
+   }
+  },
+  {
+   "module": "account",
+   "prefix": "tokens",
+   "appClass": "module:sagamore/apps/tokens",
+   "routes": {
+    "": "list",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "reporting",
+   "prefix": "reporting/analysis",
+   "appClass": "module:sagamore/apps/reporting/analysis",
+   "routes": {
+    "": "report",
+    ":params": "report"
+   }
+  },
+  {
+   "module": "reporting",
+   "prefix": "reporting/canned-reports",
+   "appClass": "name:Redirect",
+   "routes": {
+    "": "redirect",
+    ":params": "redirect"
+   }
+  },
+  {
+   "module": "reporting",
+   "prefix": "reporting/core-reports",
+   "appClass": "module:sagamore/apps/reporting/core_reports",
+   "routes": {
+    "": "index",
+    ":reportId": "show",
+    ":reportId/:params": "show"
+   }
+  },
+  {
+   "module": "reporting",
+   "prefix": "reporting/saved-reports",
+   "appClass": "module:sagamore/apps/reporting/saved_reports",
+   "routes": {
+    "": "list",
+    ":params": "list"
+   }
+  },
+  {
+   "module": "pos",
+   "prefix": "pos",
+   "appClass": "module:sagamore/apps/pos",
+   "routes": {
+    "": "pos",
+    ":id": "editTicket",
+    "layaway/new": "newLayaway"
+   }
+  },
+  {
+   "module": "pos",
+   "prefix": "pos/drawer-counts",
+   "appClass": "module:sagamore/apps/pos/drawer_counts",
+   "routes": {
+    "": "findCurrent",
+    ":id": "drawerCount",
+    ":id?:params": "drawerCount"
+   }
+  },
+  {
+   "module": "sales",
+   "prefix": "pos/daily-summary",
+   "appClass": "module:sagamore/apps/pos/daily_summary",
+   "routes": {
+    "": "currentStation",
+    ":id": "summary",
+    ":id?:params": "summary"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "email-verification",
+   "appClass": "module:sagamore/apps/email_verification",
+   "routes": {
+    "": "main",
+    "?:params": "main"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started",
+   "appClass": "module:sagamore/apps/setup_checklist",
+   "routes": {
+    "": "checklist"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-roles",
+   "appClass": "module:sagamore/apps/getting_started/roles",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-locations",
+   "appClass": "module:sagamore/apps/getting_started/locations",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-stations",
+   "appClass": "module:sagamore/apps/getting_started/stations",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-cash-drawers",
+   "appClass": "module:sagamore/apps/getting_started/cash_drawers",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-vendors",
+   "appClass": "module:sagamore/apps/getting_started/vendors",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "list/:params": "list",
+    "new": "new",
+    "edit/:id": "edit",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-items",
+   "appClass": "module:sagamore/apps/getting_started/items",
+   "routes": {
+    "inventory/:id": "inventory",
+    "merge": "list",
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-users",
+   "appClass": "module:sagamore/apps/getting_started/users",
+   "routes": {
+    "": "list",
+    "list": "list",
+    "edit/:id": "edit",
+    "edit/:id/:params": "edit",
+    "new": "create",
+    "new/:params": "create",
+    "list/:params": "list",
+    ":cash_drawer_id/activity_logs/:cash_drawer_count_id": "eventDetails",
+    "imports/sources": "importsSources",
+    "imports/sources/:source": "importsForm",
+    "imports/:id/mapper": "importsMapper",
+    "imports/:id/status": "importsStatus"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-credit-cards",
+   "appClass": "module:sagamore/apps/getting_started/credit_cards",
+   "routes": {
+    "": "main",
+    "edit/:id": "edit",
+    ":location_id/connections/edit/:id": "editConnection",
+    ":location_id/connections/new": "newConnection"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-taxes/rules",
+   "appClass": "module:sagamore/apps/getting_started/taxes",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "archived": "archived",
+    "archived/:params": "archived",
+    "new": "new",
+    "edit/:id": "edit"
+   }
+  },
+  {
+   "module": "setup",
+   "prefix": "getting-started-taxes/jurisdictions",
+   "appClass": "module:sagamore/apps/getting_started/jurisdictions",
+   "routes": {
+    "": "list",
+    ":params": "list",
+    "edit/:id": "edit",
+    "new": "new"
+   }
+  },
+  {
+   "module": "support",
+   "prefix": "support",
+   "appClass": "module:sagamore/apps/support",
+   "routes": {
+    "": "redirectToSupport"
+   }
+  },
+  {
+   "module": "test-drive",
+   "prefix": "test-drive",
+   "appClass": "module:sagamore/apps/test_drive",
+   "routes": {
+    "*": "default",
+    "pending": "pending",
+    "expired": "expired",
+    "subscription": "subscription",
+    "instructions": "instructions"
+   }
+  }
+ ]
+}

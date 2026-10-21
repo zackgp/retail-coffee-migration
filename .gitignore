@@ -1,0 +1,8 @@
+# scratch: caches, verify/baseline runs, hotspot checklists, inventory.json
+.work/
+# host-side coffeescript/typescript (tools/setup_host.sh)
+.host-deps/
+# per-machine overrides (targetRepo, workDir, ...)
+config.local.json
+node_modules/
+.DS_Store

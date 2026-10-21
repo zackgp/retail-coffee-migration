@@ -1,0 +1,197 @@
+{
+  "$comment": "Batch -> glob list for PLAN.md §5. Globs are relative to apps/monolith/src/ and written WITHOUT extension; they are matched against .coffee files (extension stripped). `*` does not cross '/', `**` matches any depth, `{a,b}` alternation. Every .coffee file must belong to exactly one batch (checked by `inventory.mjs --check`). `candidates` are files a batch must evaluate but that are owned (counted) by another batch.",
+  "knownDuplicates": {
+    "$comment": "Pre-existing .coffee + .js pairs on staging @ 6103b96a7f. Static imports resolve to .js (webpack/jest try .js first), but main's require.context(/\\.(js|coffee)/) loads BOTH. B01 must resolve them; any other pair is an error.",
+    "sagamore/lib/active_resource": "B01",
+    "sagamore/components/lookups/mass_actions/select_items_by_grid": "B01"
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "title": "Dead code",
+      "include": ["test", "specs"],
+      "candidates": {
+        "sagamore/lib/active_resource": "B02",
+        "sagamore/components/lookups/mass_actions/select_items_by_grid": "B13",
+        "sagamore/components/test_drive/**": "B12",
+        "sagamore/apps/test_drive": "B17"
+      }
+    },
+    {
+      "id": "B02",
+      "title": "lib / format / constants / errors",
+      "include": ["sagamore/lib/*", "sagamore/format/*", "sagamore/constants/*", "sagamore/errors/*"]
+    },
+    {
+      "id": "B03",
+      "title": "models / reducers / actions / api / global_states / controllers / mixins",
+      "include": [
+        "sagamore/models/*",
+        "sagamore/reducers/*",
+        "sagamore/actions/*",
+        "sagamore/api/*",
+        "sagamore/global_states/*",
+        "sagamore/controllers/imports/*",
+        "sagamore/mixins/imports"
+      ]
+    },
+    {
+      "id": "B04",
+      "title": "components: ecommerces, images, merge, authorization, model_helpers, roles",
+      "include": ["sagamore/components/{ecommerces,images,merge,authorization,model_helpers,roles}/**"]
+    },
+    {
+      "id": "B05",
+      "title": "components: payments",
+      "include": ["sagamore/components/payments/**"]
+    },
+    {
+      "id": "B06",
+      "title": "components: pos, sales",
+      "include": ["sagamore/components/{pos,sales}/**"]
+    },
+    {
+      "id": "B07",
+      "title": "components: item_grids",
+      "include": ["sagamore/components/item_grids/**"]
+    },
+    {
+      "id": "B08",
+      "title": "components: imports (mapper, pages, menu, sources, options)",
+      "include": ["sagamore/components/imports/**"],
+      "exclude": ["sagamore/components/imports/error", "sagamore/components/imports/errors/**"]
+    },
+    {
+      "id": "B09",
+      "title": "components: imports error + errors/** (dynamic registries)",
+      "include": ["sagamore/components/imports/error", "sagamore/components/imports/errors/**"]
+    },
+    {
+      "id": "B10",
+      "title": "components + containers: integrations",
+      "include": ["sagamore/components/integrations/**", "sagamore/containers/integrations/**"]
+    },
+    {
+      "id": "B11",
+      "title": "components: inventory",
+      "include": ["sagamore/components/inventory/**"]
+    },
+    {
+      "id": "B12",
+      "title": "components: settings, branding, locations, customers, test_drive",
+      "include": ["sagamore/components/{settings,branding,locations,customers,test_drive}/**"]
+    },
+    {
+      "id": "B13",
+      "title": "components: items, lookups",
+      "include": ["sagamore/components/{items,lookups}/**"]
+    },
+    {
+      "id": "B14",
+      "title": "components: layouts, purchasing",
+      "include": ["sagamore/components/{layouts,purchasing}/**"]
+    },
+    {
+      "id": "B15",
+      "title": "components: root-level shared components + mixins",
+      "include": ["sagamore/components/*", "sagamore/components/mixins/**"]
+    },
+    {
+      "id": "B16",
+      "title": "devices, printing and environment helpers",
+      "include": [
+        "sagamore/{audio,barcode_scanner,browser_plugin,print_manager,scan_and_print,documents,local_storage,hidden_input,selection_collection,events,authenticator,google_analytics_helper,intercom_helper}",
+        "sagamore/connect/browser_plugin_emulator"
+      ]
+    },
+    {
+      "id": "B17",
+      "title": "small Backbone apps",
+      "include": [
+        "sagamore/apps/{applications,default,my_account,redirect_to,support,tokens,integrations,test_drive}",
+        "sagamore/apps/gift_card/*",
+        "sagamore/apps/pos/drawer_counts",
+        "sagamore/apps/inventory/{adjustment_sets,transfers}",
+        "sagamore/apps/reporting/**",
+        "sagamore/apps/integrations/{clover,mailchimp,management_one,nuorder}"
+      ]
+    },
+    {
+      "id": "B18",
+      "title": "apps: cash_drawers, credit_cards, ecommerces, grid_templates, item_grids, settings, setup_checklist, receipts",
+      "include": [
+        "sagamore/apps/{cash_drawers,credit_cards,ecommerces,grid_templates,item_grids,settings,setup_checklist,receipts}"
+      ]
+    },
+    {
+      "id": "B19",
+      "title": "apps: financial, payment_types, integrations/quickbooks",
+      "include": ["sagamore/apps/{financial,payment_types}", "sagamore/apps/integrations/quickbooks"]
+    },
+    {
+      "id": "B20",
+      "title": "apps: inventory/physical_counts, purchasing/vendors, purchasing/returns",
+      "include": ["sagamore/apps/inventory/physical_counts", "sagamore/apps/purchasing/{vendors,returns}"]
+    },
+    {
+      "id": "B21",
+      "title": "apps: purchasing/receipts",
+      "include": ["sagamore/apps/purchasing/receipts"]
+    },
+    {
+      "id": "B22",
+      "title": "apps: sales invoices, plans, point_of_sale, orders/distribute, orders/fulfill",
+      "include": ["sagamore/apps/sales/{invoices,plans,point_of_sale}", "sagamore/apps/sales/orders/{distribute,fulfill}"]
+    },
+    {
+      "id": "B23",
+      "title": "apps: sales/orders",
+      "include": ["sagamore/apps/sales/orders"]
+    },
+    {
+      "id": "B24",
+      "title": "apps/pos.coffee: split into apps/pos/*.coffee (no conversion)",
+      "include": ["sagamore/apps/pos"]
+    },
+    {
+      "id": "B25",
+      "title": "POS views group 1 (scope defined after B24)",
+      "include": []
+    },
+    {
+      "id": "B26",
+      "title": "POS views group 2 (scope defined after B24)",
+      "include": []
+    },
+    {
+      "id": "B27",
+      "title": "POS app main body (scope defined after B24)",
+      "include": []
+    },
+    {
+      "id": "B28",
+      "title": "core base classes: app, apps/collection",
+      "include": ["sagamore/app", "sagamore/apps/collection"]
+    },
+    {
+      "id": "B29",
+      "title": "environment, initial_state",
+      "include": ["sagamore/environment", "sagamore/initial_state"]
+    },
+    {
+      "id": "B30",
+      "title": "entry files",
+      "include": ["{sagamore,sync,templates,vendor,password_reset,set_password,simulate_econduit_command}"]
+    },
+    {
+      "id": "B31",
+      "title": "main, apps",
+      "include": ["main", "apps"]
+    },
+    {
+      "id": "B32",
+      "title": "cleanup (no coffee files)",
+      "include": []
+    }
+  ]
+}
