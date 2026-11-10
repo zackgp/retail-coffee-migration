@@ -38,6 +38,16 @@ B00 产出的护栏工具、快照测试、数据，以及 `PLAN.md`、`EXAMPLES
 
 ---
 
+## ★ Jira / Skill 入口（2026-11-11，范围与日志补充）
+
+新增两个手动 Skill：`coffee-migration-ticket` 起草/经授权创建 Jira，`coffee-migration` 执行或在新会话独立 review。安装见 `docs/skills.md`；共享交接协议见 `docs/skills-workflow.md`。
+
+- 使用 Jira 入口时，**ticket 的明确 Coffee 清单**取代下文整批 Bxx 的执行范围；旧批次保留为 inventory/依赖索引，不能因此扩大 ticket 范围。§5 中非范围性的强制前置条件/验收仍需逐项读取并执行。
+- 转换 ticket 与只拆分/补测试的前置 ticket 分开；执行迁移 Skill 仅接受 conversion，不把 prerequisite 自动翻译/删除 Coffee。
+- Jira 任务使用 `progress/progress.<小写 Jira key>.md`，内容沿用 §10.3 模板；只有主会话写。纯 Bxx 执行保持原日志命名。
+- 仅调整范围来源和交接方式，**不减免 §4 的测试先行、转换前快照、热点结论、完整 verify 与独立 review**。任意文件范围用现有显式文件参数和无 `--batch` 的 verify，并单独检查热点；没有 `--ticket`/`--scope`/`--risk` 参数。
+- 下文模型推荐、旧批次数量等是原计划记录；新 Skill 不要求猜测或切换到不可用模型，也不把旧统计当作当前事实。
+
 ## 0. 结论速览
 
 | 问题 | 结论 |

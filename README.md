@@ -28,6 +28,21 @@ data/springboard-retail/ 针对该目标的数据（提交）
 .host-deps/              宿主机用的 coffeescript 1.12.7 + typescript（gitignore，setup_host.sh 安装）
 ```
 
+## 手动调用的迁移 Skills
+
+- `coffee-migration-ticket`：根据当前源码划分范围，生成 Jira ticket 草稿；明确授权后才创建 issue。
+- `coffee-migration`：按 ticket 清单执行迁移、自动校验，并生成可追溯的人工验收包；也支持新会话只做独立 review。
+
+两个 Skill 源码在 `.agents/skills/`，可在不同电脑分别安装到全局 `~/.agents/skills/`，无需写死本机路径：
+
+```sh
+node tools/install_skills.mjs --dry-run
+node tools/install_skills.mjs
+node tools/install_skills.mjs --check
+```
+
+安装/调用/更新见 [`docs/skills.md`](docs/skills.md)，Jira 范围与执行契约见 [`docs/skills-workflow.md`](docs/skills-workflow.md)。首版仍保留完整 verify 底线，尚未实现按风险自动减免护栏；未运行真实 Jira/Docker 端到端验收。
+
 ## 配置
 
 `config.json`（被 `config.local.json` 深合并覆盖）：
